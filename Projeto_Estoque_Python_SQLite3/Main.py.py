@@ -13,7 +13,7 @@ while True:
     opcao = input("Escolha uma opção: ")
 
     if opcao == "1":
-        nome = input("Nome do produto: ")
+        nome = input("Nome do produto: ").lower()
         preco = float(input("Preço: "))
         quantidade = int(input("Quantidade: "))
         promo = input("Está em promoção? (s/n): ").lower()
