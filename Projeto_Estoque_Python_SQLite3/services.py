@@ -1,4 +1,4 @@
-from Database import adicionar_produto, buscar_produto
+from Database import adicionar_produto, buscar_produto, listar_produtos as listar_produtos_db
 
 
 def cadastrar_produto(nome, preco, quantidade, promocao):
@@ -31,3 +31,19 @@ def consultar_produto(nome):
         }
 
     return None
+
+def listar_produtos():
+    produtos = listar_produtos_db()
+
+    lista_formatada = []
+
+    for produto in produtos:
+        nome, preco, quantidade, promocao = produto
+        lista_formatada.append({
+            "nome": nome,
+            "preco": preco,
+            "quantidade": quantidade,
+            "promocao": promocao
+        })
+
+    return lista_formatada

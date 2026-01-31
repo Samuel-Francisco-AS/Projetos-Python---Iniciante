@@ -1,16 +1,21 @@
-from services import cadastrar_produto, consultar_produto
+from services import cadastrar_produto, consultar_produto, listar_produtos
 
 
 def menu():
     print("\n=== SISTEMA DE ESTOQUE ===")
     print("1 - Cadastrar produto")
     print("2 - Consultar produto")
-    print("3 - Sair")
+    print("3 - Listar todos os produtos")
+    print("4 - Sair")
 
 
 while True:
     menu()
     opcao = input("Escolha uma opção: ")
+
+    if opcao == "4":
+         print("Sistema finalizado...")
+         break
 
     if opcao == "1":
         nome = input("Nome do produto: ").lower()
@@ -37,8 +42,17 @@ while True:
             print("❌ Produto não encontrado.")
 
     elif opcao == "3":
-        print("👋 Saindo do sistema...")
-        break
+        produtos = listar_produtos()
 
+    if not produtos:
+            print("Nenhum produto cadastrado.")
     else:
-        print("⚠️ Opção inválida.")
+            print("\n=== PRODUTOS CADASTRADOS ===")
+            for p in produtos:
+                status = "Promoção" if p["promocao"] else "Normal"
+                print(
+                    f"- {p['nome']} | "
+                    f"Preço: R$ {p['preco']:.2f} | "
+                    f"Qtd: {p['quantidade']} | "
+                    f"{status}"
+                    )
