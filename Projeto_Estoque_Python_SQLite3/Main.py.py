@@ -1,51 +1,44 @@
+from services import cadastrar_produto, consultar_produto
 
-produtos = [
-    {"nome": "monitor", "preco": 400,"promocao": True},
-    {"nome": "filtro de linha","preco": 120,"promocao": False},
-     {"nome": "headset","preco": 200,"promocao": False},
-      {"nome": "soundbar","preco": 300,"promocao": True},
-]
+
+def menu():
+    print("\n=== SISTEMA DE ESTOQUE ===")
+    print("1 - Cadastrar produto")
+    print("2 - Consultar produto")
+    print("3 - Sair")
+
 
 while True:
+    menu()
+    opcao = input("Escolha uma opção: ")
 
-    print('\n1 - Digite o nome do produto que deseja verificar:')
-    print('2 - Sair')
+    if opcao == "1":
+        nome = input("Nome do produto: ")
+        preco = float(input("Preço: "))
+        quantidade = int(input("Quantidade: "))
+        promo = input("Está em promoção? (s/n): ").lower()
 
-    opcao = int(input('Selecione sua opção:'))
+        promocao = 1 if promo == "s" else 0
 
-    if opcao == 1:
-        print('\nProdutos disponíveis:')
-        for produto in produtos:
-            print(f'{produto["nome"]}')
+        cadastrar_produto(nome, preco, quantidade, promocao)
+        print("✅ Produto cadastrado com sucesso!")
 
-        nome_escolhido = input('\nDigite o nome do produto:').lower()
-        encontrado = False
+    elif opcao == "2":
+        nome = input("Nome do produto: ")
+        produto = consultar_produto(nome)
 
-        for produto in produtos:
-                if produto["nome"] == nome_escolhido:
-                    encontrado = True
+        if produto:
+            print(f"\nProduto: {produto['nome']}")
+            print(f"Preço bruto: R$ {produto['preco']:.2f}")
+            print(f"Desconto: R$ {produto['desconto']:.2f}")
+            print(f"Preço final: R$ {produto['preco_final']:.2f}")
+            print(f"Quantidade em estoque: {produto['quantidade']}")
+        else:
+            print("❌ Produto não encontrado.")
 
-                    preco = produto["preco"]
-
-                    if preco >= 100 and not produto["promocao"]:
-                        desconto = preco * 0.10
-                    elif produto["promocao"]:
-                        desconto = preco * 0.20
-                    else:
-                        desconto = 0
-                    
-                    preco_final = preco - desconto
-
-                    print('\nDetalhes do produto:')
-                    print(f'Produto: {produto["nome"]}')
-                    print(f'Preço bruto: R$ {preco:.2f}')
-                    print(f'O desconto aplicável é de: R$ {desconto:.2f}')
-                    print(f'O valor de um(a) {produto["nome"]} com desconto é: R$ {preco_final:.2f}')
-                    break
-
-    elif opcao == 2:
-        print('encerrando sistema...')
+    elif opcao == "3":
+        print("👋 Saindo do sistema...")
+        break
 
     else:
-        print('Produto inválido!')
-
+        print("⚠️ Opção inválida.")
