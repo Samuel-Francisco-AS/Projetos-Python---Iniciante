@@ -1,41 +1,19 @@
 \# 🐍 Projetos em Python — Nível Iniciante
 
-
-
 Bem-vindo(a)! 👋
-
-
 
 Este repositório reúne \*\*projetos simples em Python\*\*, desenvolvidos durante meus estudos iniciais da linguagem. O objetivo aqui é \*\*praticar lógica de programação\*\*, estruturas básicas e ganhar familiaridade com Python e com o uso do \*\*Git/GitHub\*\*.
 
-
-
 > 📌 \*Todos os projetos foram feitos com foco em aprendizado, clareza e experimentação.\*
-
-
 
 ---
 
-
-
 \## 📂 Estrutura do Repositório
-
-
 
 Os projetos estão organizados em arquivos `.py`, cada um abordando um conceito específico:
 
 
-
-\### 🔹 `Pokedex\_Hoenn.py`
-
-
-
-Um programa interativo que simula uma \*\*Pokédex da região de Hoenn\*\*.
-
-
-
 \*\*Conceitos praticados:\*\*
-
 
 
 \* Dicionários (`dict`)
@@ -48,26 +26,12 @@ Um programa interativo que simula uma \*\*Pokédex da região de Hoenn\*\*.
 
 \* Organização de dados estruturados
 
-
-
-💡 O usuário pode digitar o nome de um Pokémon e visualizar informações como tipo, habilidades, ataque, defesa e descrição.
-
-
-
 ---
 
-
-
-\### 🔹 `Desconto\_sobre\_valores\_de\_produtos.py`
-
-
-
-Sistema simples de consulta de produtos com \*\*cálculo automático de descontos\*\*.
-
+\### Projeto_Estoque_Python_SQLite3.py`
 
 
 \*\*Conceitos praticados:\*\*
-
 
 
 \* Listas de dicionários
@@ -80,14 +44,15 @@ Sistema simples de consulta de produtos com \*\*cálculo automático de desconto
 
 \* Controle de fluxo
 
+\* Funções
+
+\* Interação entre scripts e banco de dados simples 
 
 
-💡 O programa aplica descontos diferentes dependendo do valor do produto e se ele está ou não em promoção.
-
-
+# O código permite ao usuário registrar produtos e suas respectivas informações no arquivo ".db", verificar todos
+os itens já registrados no banco de dados, realizar a busca por um item específico e seus dados e por fim, finalizar o loop do script. Tudo isso a partir do terminal.
 
 ---
-
 
 
 \## ▶️ Como executar os projetos
@@ -96,11 +61,7 @@ Sistema simples de consulta de produtos com \*\*cálculo automático de desconto
 
 1\. Certifique-se de ter o \*\*Python 3\*\* instalado
 
-
-
 2\. Clone este repositório:
-
-
 
 &nbsp;  ```bash
 
@@ -110,8 +71,6 @@ Sistema simples de consulta de produtos com \*\*cálculo automático de desconto
 
 3\. Acesse a pasta do projeto:
 
-
-
 &nbsp;  ```bash
 
 &nbsp;  cd nome-do-repositorio
@@ -120,15 +79,11 @@ Sistema simples de consulta de produtos com \*\*cálculo automático de desconto
 
 4\. Execute qualquer arquivo:
 
-
-
 &nbsp;  ```bash
 
 &nbsp;  python nome\_do\_arquivo.py
 
 &nbsp;  ```
-
-
 
 ---
 
@@ -158,7 +113,7 @@ Sistema simples de consulta de produtos com \*\*cálculo automático de desconto
 
 \* Melhorar organização do código (funções)
 
-\* Adicionar persistência de dados (JSON / SQLite)
+\* Adicionar persistência de dados (JSON)
 
 \* Criar interfaces gráficas simples
 
