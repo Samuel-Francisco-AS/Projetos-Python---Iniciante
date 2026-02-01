@@ -26,7 +26,7 @@ while True:
         promocao = 1 if promo == "s" else 0
 
         cadastrar_produto(nome, preco, quantidade, promocao)
-        print("✅ Produto cadastrado com sucesso!")
+        print("Produto cadastrado com sucesso!")
 
     elif opcao == "2":
         nome = input("Nome do produto: ")
@@ -39,7 +39,7 @@ while True:
             print(f"Preço final: R$ {produto['preco_final']:.2f}")
             print(f"Quantidade em estoque: {produto['quantidade']}")
         else:
-            print("❌ Produto não encontrado.")
+            print("Produto não encontrado.")
 
     elif opcao == "3":
         produtos = listar_produtos()
