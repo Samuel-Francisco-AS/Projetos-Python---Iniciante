@@ -1,67 +1,35 @@
-\# 🐍 Projetos em Python — Nível Iniciante
-
-Bem-vindo(a)! 👋
-
-Este repositório reúne \*\*projetos simples em Python\*\*, desenvolvidos durante meus estudos iniciais da linguagem. O objetivo aqui é \*\*praticar lógica de programação\*\*, estruturas básicas e ganhar familiaridade com Python e com o uso do \*\*Git/GitHub\*\*.
-
-> 📌 \*Todos os projetos foram feitos com foco em aprendizado, clareza e experimentação.\*
-
----
-
-\## 📂 Estrutura do Repositório
-
-Os projetos estão organizados em arquivos `.py`, cada um abordando um conceito específico:
+# Projeto - Controle de Estoque com python
 
 
-\## 🎯 Objetivo do Repositório
+# No que consiste?
+
+Um código modular, com uma interface gráfica simples produzido com Tkinter, que permite ao usuário empenhar as seguintes funções: Cadastrar novos produtos e suas informações no banco de dados, consultar um produto específico cadastrado no banco de dados ou consultar uma lista com todos os produtos já registrados e seus respectivos dados.
 
 
-
-\* Consolidar os fundamentos de Python
-
-\* Criar um histórico de aprendizado
-
-\* Servir como referência futura
-
-\* Praticar versionamento com Git e GitHub
+# Objetivo do Repositório
 
 
+- Consolidar os fundamentos de Python
+- Criar um histórico de aprendizado
+- Servir como referência futura
+- Praticar versionamento com Git e GitHub
 
----
-
-
-
-\## 🚀 Próximos passos (ideias futuras)
-
-
-
-\* Melhorar organização do código (funções)
-
-\* Adicionar persistência de dados (JSON)
-
-\* Criar interfaces gráficas simples
-
-\* Evoluir os projetos para versões mais completas
+# Próximos passos (ideias futuras)
 
 
+- Melhorar organização do código (funções) (Concluído)
+- Adicionar persistência de dados (JSON)
+- Criar interfaces gráficas simples (Concluído)
+- Evoluir os projetos para versões mais completas
 
----
 
-
-
-\## 🧠 Observação final
-
+# Observação final
 
 
 Este repositório representa \*\*aprendizado em progresso\*\*. Sugestões, feedbacks e ideias são sempre bem-vindos! 😊
 
 
-
----
-
-
-
-📌 \*Criado por um estudante de Python em constante evolução.\*
+# Criado por um estudante de Python em constante evolução.\*
 
 
 
